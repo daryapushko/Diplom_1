@@ -1,20 +1,19 @@
 package praktikum;
 
 import org.junit.Test;
-import org.mockito.Spy;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class TestDatabase {
     Database database = new Database();
 
     @Test
     public void testAvailableBuns() {
-        assertEquals(database.availableBuns().size(), 3);
+        assertEquals(3, database.availableBuns().size());
     }
 
     @Test
     public void testAvailableIngredients() {
-        assertEquals(database.availableIngredients().size(), 6);
+        assertEquals(6, database.availableIngredients().size());
     }
 }
